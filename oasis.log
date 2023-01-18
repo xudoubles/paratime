@@ -1,0 +1,277 @@
+{
+  "software_version": "22.2.3",
+  "identity": {
+    "node": "UcSDvbiE2HGcWbm65KCsmuZiplA3F4oXDYdKcZ7/q1w=",
+    "p2p": "MBd735s8Aj4BCGQfpv78aBCzGXj4HcESpkG8KigeN88=",
+    "consensus": "ty6JHe0xrER4gI7klIkbt7nCg1HT0WnEgkqFyBKKMTg=",
+    "tls": [
+      "Cpckg2fvbeQ2jr2COFjiFTcJbgiMEdh0xIsSB7jF9iU=",
+      "TbfxVQ0bYNMswIw4vakP2VBd5DWJU5i4xdx7+5lHKO8="
+    ]
+  },
+  "consensus": {
+    "status": "ready",
+    "version": {
+      "major": 6
+    },
+    "backend": "tendermint",
+    "mode": "full",
+    "features": 3,
+    "node_peers": [
+      "b96efa15acbdc3631384d3cf72cc7abeee340927@141.94.71.151:26656",
+      "99e6ab9c1af70697ce0ca97b32bdaea51ffd4adb@217.27.92.246:10200",
+      "e248726fb3dc6f5352d2ec92a69ca92818c4da22@65.108.45.172:6656",
+      "b1d097f13ef504dcc003dc1948ab28a420c402a4@135.181.1.160:16656",
+      "1b01f89cc66bedfe40ffc7b22cc4b1c9bd8eded8@212.232.29.235:28856",
+      "f4a93c15784d9f194a586e99dd769ed1fd428b79@144.217.253.124:26656",
+      "5ea1238cb4dfef29ad2cb6e2a152f741a0c3d8cd@34.155.252.176:26656",
+      "08c1550c058ab49b2e69d159b33fa024fecbbbfa@138.91.143.26:26656",
+      "006a3affd553e936dfb1d840d89663105e942412@142.132.201.67:26656",
+      "b8994b04adf1393b4957ccfd3406361455046897@159.69.59.60:26656",
+      "ddc2af954f0928f1b1451d95da9ed9da7748cbef@176.9.16.60:30656",
+      "0517a3956e09a27b7f7a23acb47435e6583d9366@34.85.239.136:26656",
+      "a26f83c45590d38ca47a6168b75aec4278783986@80.64.208.26:26656",
+      "4b09be0737402c8bc3bfce0424e0e082e4e8c207@23.88.56.166:26656",
+      "102ebf63533675b39c4779365364e754c1f2ab81@85.89.172.66:26656",
+      "da429495ddf8a2058637ec46db0da7a8f769023f@146.59.70.171:34649",
+      "1f5407d4064698eaffce24bc865911444eea876c@34.136.98.20:26656",
+      "1f240213afe9edcba9cc413773574c56d9fcb3ab@178.63.105.185:26656",
+      "18ed175a50bd1eee4990548e13638db6ef496f88@95.217.85.213:46656",
+      "68d63f77952a6c2e5f0f7040402cba93cdeaa70a@95.216.72.47:38756"
+    ],
+    "latest_height": 12101500,
+    "latest_hash": "144c52f2500d463944bb9593e25a6e6b067ec6bcf423fdf6ed9b13cb28f2ceaf",
+    "latest_time": "2023-01-14T02:56:39+01:00",
+    "latest_epoch": 20156,
+    "latest_state_root": {
+      "ns": "0000000000000000000000000000000000000000000000000000000000000000",
+      "version": 12101499,
+      "root_type": 1,
+      "hash": "93eea5ab5208fc48bcecfcc17f0dda7930de2f4b550bf7c34d441554bc878fae"
+    },
+    "genesis_height": 8048956,
+    "genesis_hash": "0a29ac21fa69bb9e43e5cb25d10826ff3946f1ce977e82f99a2614206a50765c",
+    "last_retained_height": 8048956,
+    "last_retained_hash": "0a29ac21fa69bb9e43e5cb25d10826ff3946f1ce977e82f99a2614206a50765c",
+    "chain_context": "b11b369e0da5bb230b220127f5e7b242d385ef8c6f54906243f30af63c815535",
+    "is_validator": false
+  },
+  "runtimes": {
+    "000000000000000000000000000000000000000000000000e199119c992377cb": {
+      "descriptor": {
+        "v": 3,
+        "id": "000000000000000000000000000000000000000000000000e199119c992377cb",
+        "entity_id": "TAv9qXjV4yBphnKLJcNkzois1TLoYUjaRPrMfY58Apo=",
+        "genesis": {
+          "state_root": "c672b8d1ef56ed28ab87c3622c5114069bdd3ad7b8f9737498d0c01ecef0967a",
+          "round": 0
+        },
+        "kind": 1,
+        "tee_hardware": 1,
+        "key_manager": "4000000000000000000000000000000000000000000000008c5ea5e49b4bc9ac",
+        "executor": {
+          "group_size": 5,
+          "group_backup_size": 11,
+          "allowed_stragglers": 1,
+          "round_timeout": 2,
+          "max_messages": 256
+        },
+        "txn_scheduler": {
+          "batch_flush_timeout": 1000000000,
+          "max_batch_size": 1000,
+          "max_batch_size_bytes": 10485760,
+          "propose_batch_timeout": 2
+        },
+        "storage": {
+          "checkpoint_interval": 100000,
+          "checkpoint_num_kept": 2,
+          "checkpoint_chunk_size": 8388608
+        },
+        "admission_policy": {
+          "any_node": {}
+        },
+        "constraints": {
+          "executor": {
+            "backup-worker": {
+              "validator_set": {},
+              "max_nodes": {
+                "limit": 1
+              },
+              "min_pool_size": {
+                "limit": 11
+              }
+            },
+            "worker": {
+              "validator_set": {},
+              "max_nodes": {
+                "limit": 1
+              },
+              "min_pool_size": {
+                "limit": 11
+              }
+            }
+          }
+        },
+        "staking": {
+          "min_in_message_fee": "0"
+        },
+        "governance_model": "entity",
+        "deployments": [
+          {
+            "version": {
+              "major": 1,
+              "minor": 1
+            },
+            "valid_from": 0,
+            "tee": "oWhlbmNsYXZlc4GiaW1yX3NpZ25lclggQCXat+vaH77MTjY3YG4CEhTQ9BxtBCL9N4sqi4iBhFlqbXJfZW5jbGF2ZVggoiJgre0cDF5arUk9wh0X9eGWr5cHb8LY0A3/msmznHc="
+          },
+          {
+            "version": {
+              "major": 2,
+              "minor": 6,
+              "patch": 1
+            },
+            "valid_from": 19607,
+            "tee": "oWhlbmNsYXZlc4GiaW1yX3NpZ25lclggQCXat+vaH77MTjY3YG4CEhTQ9BxtBCL9N4sqi4iBhFlqbXJfZW5jbGF2ZVggPu2I6VMwkVAMYtJXNEUnbL672dLCit4wCtaxuhTEjds="
+          }
+        ]
+      },
+      "latest_round": 26586,
+      "latest_hash": "696b8b1a0390f6d2fae08aa8c01f29754e57ddb86b59cfe1beeb74beef55b47e",
+      "latest_time": "2023-01-14T02:42:52+01:00",
+      "latest_state_root": {
+        "ns": "000000000000000000000000000000000000000000000000e199119c992377cb",
+        "version": 26586,
+        "root_type": 1,
+        "hash": "530eb065112ab7d5e5e73216186252bb758dc4b1a46e08d66f8fead89303e296"
+      },
+      "genesis_round": 8284,
+      "genesis_hash": "280cc2524ad815555f472bcb11f6d8a2dd0f645eaf236004503750d6f175735c",
+      "last_retained_round": 8284,
+      "last_retained_hash": "280cc2524ad815555f472bcb11f6d8a2dd0f645eaf236004503750d6f175735c",
+      "committee": {
+        "status": "ready",
+        "active_version": {
+          "major": 2,
+          "minor": 6,
+          "patch": 1
+        },
+        "latest_round": 26586,
+        "latest_height": 12101360,
+        "executor_roles": [
+          "backup-worker"
+        ],
+        "is_txn_scheduler": false,
+        "liveness": {
+          "total_rounds": 1,
+          "live_rounds": 1
+        },
+        "peers": [
+          "/ip4/84.39.245.93/tcp/30002/p2p/12D3KooWByu3Wzpr5SZ1dPtqvK8boT7SPLKZYzcDTUmtrB5ARNFS",
+          "/ip4/51.81.57.69/tcp/30002/p2p/12D3KooWAcrMmjagXif4ocSDeZxWT4XA8LMNinHASwrmG2uV64H5",
+          "/ip4/66.85.141.186/tcp/30002/p2p/12D3KooWQuEPfUoCDrqAZLG4Xzy1W4A5To5S5roghd3HsrncqpjC",
+          "/ip4/86.99.194.215/tcp/30002/p2p/12D3KooWFm43QfCGKYmd198H3EwnWTnz1GcLaAHPUh9y9NRV9RZp",
+          "/ip4/80.64.208.26/tcp/30002/p2p/12D3KooWGTfuY6Umye8348GDgbfghM6gwLbFDQEdbpeXbahFRE5R",
+          "/ip4/131.153.242.59/tcp/30002/p2p/12D3KooWGfyNBqnppXZ1jo8zRcav3uKunj85HGbEDqj67d72jbJv",
+          "/ip4/51.222.154.55/tcp/30002/p2p/12D3KooWP2zTUiT7v3gpDJYq8VVoMMd5D98ocypmCt8hUdkYNeae",
+          "/ip4/52.162.156.55/tcp/30002/p2p/12D3KooWCyq6j1diBuu2FHwfu29MXqJymtTnwrzGLZye7F4qpB5d",
+          "/ip4/193.201.82.230/tcp/30004/p2p/12D3KooWDS9tESF1LoWjAAWkEa4bnjRuxpHjaz5T5VTKjN7BfGe2",
+          "/ip4/212.41.7.220/tcp/30002/p2p/12D3KooWBpJUTDKpQ1ZXvqBidRhsF3g12ywu5UypCSQSvgQHB6Ve",
+          "/ip4/51.222.44.106/tcp/30002/p2p/12D3KooWSJ4WnjUY76cfiifujynaxD15QnCdQfzxuJsyqzat24rp",
+          "/ip4/212.232.29.235/tcp/35002/p2p/12D3KooWSHF3gtW3thCZVJ3HJJTHNyJMB273iEVbJHVPpRYpdmmb",
+          "/ip4/131.153.164.15/tcp/30002/p2p/12D3KooWCixcEb3YyZqQnANYX9YLVuAxQ2tNaRapQuYh9TeTTFZV",
+          "/ip4/131.153.99.14/tcp/30002/p2p/12D3KooWKPMS72iRgPDWczMVzKyYa3DSZmc771XDNXnMWVPnjfmJ",
+          "/ip4/185.107.80.40/tcp/30002/p2p/12D3KooWHHG9fq9bLSKSdtQXBtqMJj4K3zyDCUJU9PvEKj7CBFbw",
+          "/ip4/131.153.242.59/tcp/30003/p2p/12D3KooWStTpimpJLSa85gsWG17SGpdh43pHogQDhzFGiKXDQAJe",
+          "/ip4/185.52.52.90/tcp/20103/p2p/12D3KooWQuhL1EQzhfiGpq44L33SmQ8DkCptzSbKz9wWS7SjQdJt",
+          "/ip4/20.169.224.73/tcp/30002/p2p/12D3KooWMTfYgCRrQJQTC4GEaechtSW3hdXjCpwnLrAaebrnDnks",
+          "/ip4/66.85.135.154/tcp/30002/p2p/12D3KooWRRbEUSjnw3FwLm368wd8pArGRG6YCYMhAdA8oWG1CgkT",
+          "/ip4/20.188.122.70/tcp/30002/p2p/12D3KooWAyB5zukWm8VDfZAKnqc8wKDd5bwSzJEqVZrhU48RUoMa",
+          "/ip4/146.59.70.207/tcp/30002/p2p/12D3KooWN2wNNar6xWQuRem6QGaWie5u3StWWmdZm4xeZ4CFKADE",
+          "/ip4/84.234.97.201/tcp/30004/p2p/12D3KooWJy5LhH2z79Zu2Ki7HWjmwcHDxRuCNzLFxtz7ksYFQxXo",
+          "/ip4/172.16.152.41/tcp/30002/p2p/12D3KooWJArUJBm2ikBb8ZfDmVeXTrawXz9qscP1kCSuye2oraQv",
+          "/ip4/146.59.70.171/tcp/34648/p2p/12D3KooWNs96E3xFaC4bcjVHxEptmmxF9UvjeorrNcNM2SVHUasY",
+          "/ip4/174.138.162.2/tcp/30002/p2p/12D3KooWAYVr6x3xpw7PCywXwbsneDc4eAN9SiaT4TndL61xE64J",
+          "/ip4/93.107.154.131/tcp/30002/p2p/12D3KooWHg1SJeEtyA6gqALshL9hnB9RMUcibh8UiMr4Nj3UDfGy",
+          "/ip4/5.9.143.53/tcp/30002/p2p/12D3KooWJHz9pJ3E2Qku4KMMKcGUa5ko8yGnXenFHSC38eT7fBsz",
+          "/ip4/131.153.59.34/tcp/26812/p2p/12D3KooWFpVinAV1x4iX35yEmEARpZNay1Cs5Y9FRZME2HsZyxCj",
+          "/ip4/127.0.0.1/tcp/30001/p2p/12D3KooWEtdBrscnfnhmjiHsFS85eDcj6AQMX8jMWvmRW71AXxnm",
+          "/ip4/93.103.141.194/tcp/26892/p2p/12D3KooWRHK5E8iTWPr6SgnJyDf9HhB5QUs9tqXyFRWB8FfEyTdr",
+          "/ip4/104.154.68.242/tcp/9002/p2p/12D3KooWK2LiFzEsAScjs5ssLK4qpHNxDTm78sHhsD4xtPAGrzch",
+          "/ip4/34.133.63.91/tcp/9002/p2p/12D3KooWEahbqmRyY5tM9eSeiZV29HJqwWtZED1zkmw224P3Ymgr",
+          "/ip4/172.26.10.100/tcp/30001/p2p/12D3KooWPxb48tCvx8mytzYwn7FU4qsmF5QUiK2upd16NXkctmUY",
+          "/ip4/195.201.202.101/tcp/34648/p2p/12D3KooWQUz7nLJHyAWnoVLPLEoPyyeyihbWcFmJgvkcwXXNtKvK",
+          "/ip4/104.154.253.149/tcp/9002/p2p/12D3KooWGVF8BrD83UQo7QxfbHcEWd4dZMGLu5bP7UcjBbHqVXNL",
+          "/ip4/84.255.245.194/tcp/9200/p2p/12D3KooWM9RaU9BbX3zu5bgfEBjbaBbGPkRqXx5iTgD7eoPxuo5U"
+        ],
+        "host": {
+          "versions": [
+            {
+              "major": 2,
+              "minor": 6,
+              "patch": 1
+            }
+          ]
+        }
+      },
+      "executor": {
+        "status": "ready"
+      },
+      "storage": {
+        "last_finalized_round": 26586
+      }
+    }
+  },
+  "registration": {
+    "last_registration": "2023-01-14T02:42:47+01:00",
+    "descriptor": {
+      "v": 2,
+      "id": "UcSDvbiE2HGcWbm65KCsmuZiplA3F4oXDYdKcZ7/q1w=",
+      "entity_id": "izy38AmUeU4b4L23kVy4BlxbkHGOPy4KPSSLnJglrV0=",
+      "expiration": 20158,
+      "tls": {
+        "pub_key": "Cpckg2fvbeQ2jr2COFjiFTcJbgiMEdh0xIsSB7jF9iU=",
+        "next_pub_key": "TbfxVQ0bYNMswIw4vakP2VBd5DWJU5i4xdx7+5lHKO8=",
+        "addresses": null
+      },
+      "p2p": {
+        "id": "MBd735s8Aj4BCGQfpv78aBCzGXj4HcESpkG8KigeN88=",
+        "addresses": [
+          "95.217.130.147:30002"
+        ]
+      },
+      "consensus": {
+        "id": "ty6JHe0xrER4gI7klIkbt7nCg1HT0WnEgkqFyBKKMTg=",
+        "addresses": null
+      },
+      "vrf": {
+        "id": "xHDaj3ISnR15yGSnZrToXgYzDRDEY1M7Ql+PHDAYlRA="
+      },
+      "runtimes": [
+        {
+          "id": "000000000000000000000000000000000000000000000000e199119c992377cb",
+          "version": {
+            "major": 2,
+            "minor": 6,
+            "patch": 1
+          },
+          "capabilities": {
+            "tee": {
+              "hardware": 1,
+              "rak": "OEKWsftVdrLQWg87lQXPBbsd8M/mYeo8UsPjN+FrSNw=",
+              "attestation": "o2Rib2R5WQQ5eyJub25jZSI6IlBrekphR2pmMGIvbFRacXJUMjlUZHJjNWxlaEhDNWZVIiwiaWQiOiI0OTU1ODU1ODIzNjAzMjcxMjU2NDA0MDMyMzM5MTI0MTYwNDg3NyIsInRpbWVzdGFtcCI6IjIwMjMtMDEtMTRUMDA6NTY6NDguOTk1ODczIiwidmVyc2lvbiI6NCwiZXBpZFBzZXVkb255bSI6ImhxMVNFTTQ2a1RKaDVqeS9OSUtGdFYrQmV0djlBTnNrUkhnUU4vUUprV3lmWHdvSWFWZk5Sb2diRGllanBENEsva1hNemg3NTZ1NjhkbDZnQi84YXZvdXczeC9JRVg3bDZkVXlveTlvOXJDOHBxUHVJNm5uSTFWUWhGL0ZLZUM0Z2R3UG5vekxXeUJDSXpFKytqQzlabmMzaVpBU3NXMlVQOHpwTEoxMTNXRT0iLCJhZHZpc29yeVVSTCI6Imh0dHBzOi8vc2VjdXJpdHktY2VudGVyLmludGVsLmNvbSIsImFkdmlzb3J5SURzIjpbIklOVEVMLVNBLTAwMzM0IiwiSU5URUwtU0EtMDA2MTUiXSwiaXN2RW5jbGF2ZVF1b3RlU3RhdHVzIjoiU1dfSEFSREVOSU5HX05FRURFRCIsImlzdkVuY2xhdmVRdW90ZUJvZHkiOiJBZ0FCQUVBTUFBQU5BQTBBQUFBQUFFZWYzMlZMR0h6VFN1amxGNkhUczlZQUFBQUFBQUFBQUFBQUFBQUFBQUFBRXhNQ0IvK0FCd0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJRQUFBQUFBQUFBREFBQUFBQUFBQUQ3dGlPbFRNSkZRREdMU1Z6UkZKMnkrdTluU3dvcmVNQXJXc2JvVXhJM2JBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCQUpkcTM2OW9mdnN4T05qZGdiZ0lTRk5EMEhHMEVJdjAzaXlxTGlJR0VXUUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQjZvTFFjalNkU1pSYjliejZpSzMrcTdjRVcrcjJEOGd5QU9Hc2ZRNWgrRWo1TXlXaG8zOUcvNVUyYXEwOXZVM2EzT1pYb1J3dVgxTmJmZ1Z2MnBRMkgifWlzaWduYXR1cmVZAVhiWDdPTzZmUTdrbXBRbjJScWQ3V0M3Zy9VTWdTM1lKc1hFVERaN2VoRHVwbkc1cWdEKzRLNU9mR1ZzSG1PcGpxeUhIRnBGbTlLZ0l1WXIrdTZnUDM5cE10eWVzenVFQ0ttWmNhNDg4WmlZY2FRMGl3RWVUVzNKZzRCUldmZDkzemRhZ3ZleEo5Sk94NEQ0aHZEc2hIU3RUT0lyTUkwS04vVVZOV3BqVUNFa0QvSk02SDBXNWI4VzRSSDVGWm4veXExR1RzdVQ5UHlISy9nUW9rOWJVWW9PZ3ZjS0VpVkJ0WGF1S0pSOTFXZmt4ZHpPbFlXZ0dmVTJFN252bkJiMmJLaUQ0M0RmdGVjaWllQjRxZTd2ZHFkS1VITG5GYWhHUXRZc1hXM1dCaU9ZdzRkRys3NmJUME5yMFRDUkVqdklKQkxJa203K29uU0FHK1V3UTVLay8yU1E9PXFjZXJ0aWZpY2F0ZV9jaGFpblkO+C0tLS0tQkVHSU4lMjBDRVJUSUZJQ0FURS0tLS0tJTBBTUlJRW9UQ0NBd21nQXdJQkFnSUpBTkVIZGwweW83Q1dNQTBHQ1NxR1NJYjNEUUVCQ3dVQU1INHhDekFKQmdOViUwQUJBWVRBbFZUTVFzd0NRWURWUVFJREFKRFFURVVNQklHQTFVRUJ3d0xVMkZ1ZEdFZ1EyeGhjbUV4R2pBWUJnTlYlMEFCQW9NRVVsdWRHVnNJRU52Y25CdmNtRjBhVzl1TVRBd0xnWURWUVFERENkSmJuUmxiQ0JUUjFnZ1FYUjBaWE4wJTBBWVhScGIyNGdVbVZ3YjNKMElGTnBaMjVwYm1jZ1EwRXdIaGNOTVRZeE1USXlNRGt6TmpVNFdoY05Nall4TVRJdyUwQU1Ea3pOalU0V2pCN01Rc3dDUVlEVlFRR0V3SlZVekVMTUFrR0ExVUVDQXdDUTBFeEZEQVNCZ05WQkFjTUMxTmglMEFiblJoSUVOc1lYSmhNUm93R0FZRFZRUUtEQkZKYm5SbGJDQkRiM0p3YjNKaGRHbHZiakV0TUNzR0ExVUVBd3drJTBBU1c1MFpXd2dVMGRZSUVGMGRHVnpkR0YwYVc5dUlGSmxjRzl5ZENCVGFXZHVhVzVuTUlJQklqQU5CZ2txaGtpRyUwQTl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUFxWG90NE9adXBoUjhudWRGckFGaWFHeHhrZ21hJTJGRXMlMkZCQSUyQnQlMEFiZUNUVVIxMDZBTDFFTmNXQTRGWDNLJTJCRTlCQkwwJTJGN1g1cmo1bklnWCUyRlIlMkYxdWJoa0tXdzlnZnFQRzNLZUF0SWQlMEFjdiUyRnVUTzF5WHY1MHZxYVB2RTFDUkNodnpkUyUyRlpFQnFRNW9WdkxUUFozVkVpY1FqbHl0S2dOOWNMbnhid3R1diUwQUxVSzdleVJQZkpXJTJGa3NkZE96UDhWQkJuaW9sWW5SQ0QyanJNUlo4bkJNMlpXWXduWG53WWVPQUhWJTJCVzl0T2hBJTBBSW13UndLRiUyRjk1eUFzVndkMjFyeUhNSkJjR0g3MHFMYWdaN1R0eXQlMkIlMkJxTyUyRjYlMkJLQVhKdUt3WnFqUmxFdFNFejglMEFnWlFlRmZWWWdjd1Nmbzk2b1NNQXpWcjdWMEw2SFNETFJucGI2eHhtYlBkcU5vbDR0UUlEQVFBQm80R2tNSUdoJTBBTUI4R0ExVWRJd1FZTUJhQUZIaERlM2FtZnJ6UXIzNUNOJTJCczFmRHVIQVZFOE1BNEdBMVVkRHdFQiUyRndRRUF3SUclMEF3REFNQmdOVkhSTUJBZjhFQWpBQU1HQUdBMVVkSHdSWk1GY3dWYUJUb0ZHR1QyaDBkSEE2THk5MGNuVnpkR1ZrJTBBYzJWeWRtbGpaWE11YVc1MFpXd3VZMjl0TDJOdmJuUmxiblF2UTFKTUwxTkhXQzlCZEhSbGMzUmhkR2x2YmxKbCUwQWNHOXlkRk5wWjI1cGJtZERRUzVqY213d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dHQkFHY0l0aHRjSzlJVlJ6NHIlMEFScSUyQlpLRSUyQjdrNTAlMkZPeFVzbVc4YWF2T3pLYjBpQ3gwN1lROXJ6aTVuVTczdE1FMnlHUkx6aFNWaUZzJTJGTHBGYTklMEFscFFMNkpMMWFRd21EUjc0VHhZR0JBSWk1ZjRJNVRKb0NDRXFSSHo5MWtwRzZVdnluMnRMbW5JZEpiUEU0dll2JTBBV0xydFhYZkZCU1NQRDRBZm43JTJCMyUyRlhVZ2dBbGM3b0NUaXpPZmJidE9GbFlBNGc1S2NZZ1MxSjJaQWVNUXFiVWQlMEFac2VaQ2NhWlpabjY1dGRxZWU4VVhabER2eDAlMkJOZE8wTFIlMkI1cEZ5JTJCanVNMHdXYnU1OU12emNtVFhianNpN0hZJTBBNnpkNTNZcTVLMjQ0ZndGSFJROGVPQjBJV0IlMkI0UGZNN0ZlQUFwWnZsZnFsS09sTGNaTDJ1eVZtelJreVI1eVc3JTBBMnVvOW1laFg0NENpUEoyZnNlOVk2ZVF0Y2ZFaE1Qa21IWEkwMXNOJTJCS3dQYnBBMzklMkJ4T3NTdGpoUDlOMVkxYTIlMEF0UUFWbyUyQnlWZ0xnVjJId3M3M0ZjMG8zd0M3OHFQRUElMkJ2MmFScyUyRkJlM1pGRGdEeWdoYyUyRjFmZ1UlMkI3QyUyQlA2a2JxJTBBZDRwb3liNklXOEtDSmJ4Zk1KdmtvcmROT2dPVVV4bmRQSEVpJTJGdGIlMkZVN3VMakxPZ1BBJTNEJTNEJTBBLS0tLS1FTkQlMjBDRVJUSUZJQ0FURS0tLS0tJTBBLS0tLS1CRUdJTiUyMENFUlRJRklDQVRFLS0tLS0lMEFNSUlGU3pDQ0E3T2dBd0lCQWdJSkFORUhkbDB5bzdDVU1BMEdDU3FHU0liM0RRRUJDd1VBTUg0eEN6QUpCZ05WJTBBQkFZVEFsVlRNUXN3Q1FZRFZRUUlEQUpEUVRFVU1CSUdBMVVFQnd3TFUyRnVkR0VnUTJ4aGNtRXhHakFZQmdOViUwQUJBb01FVWx1ZEdWc0lFTnZjbkJ2Y21GMGFXOXVNVEF3TGdZRFZRUUREQ2RKYm5SbGJDQlRSMWdnUVhSMFpYTjAlMEFZWFJwYjI0Z1VtVndiM0owSUZOcFoyNXBibWNnUTBFd0lCY05NVFl4TVRFME1UVXpOek14V2hnUE1qQTBPVEV5JTBBTXpFeU16VTVOVGxhTUg0eEN6QUpCZ05WQkFZVEFsVlRNUXN3Q1FZRFZRUUlEQUpEUVRFVU1CSUdBMVVFQnd3TCUwQVUyRnVkR0VnUTJ4aGNtRXhHakFZQmdOVkJBb01FVWx1ZEdWc0lFTnZjbkJ2Y21GMGFXOXVNVEF3TGdZRFZRUUQlMEFEQ2RKYm5SbGJDQlRSMWdnUVhSMFpYTjBZWFJwYjI0Z1VtVndiM0owSUZOcFoyNXBibWNnUTBFd2dnR2lNQTBHJTBBQ1NxR1NJYjNEUUVCQVFVQUE0SUJqd0F3Z2dHS0FvSUJnUUNmUEdSJTJCdFhjOHUxRXRKekxBMTBGZXUxV2clMkJwN2UlMEFMbVNSbWVhQ0hia1ExVEYzTndsM1JtcHFYa2VHek5MZDY5UVVuV292WXlWU25kRU15WWMzc0hlY0dnZmluRWVoJTBBcmdCSlNFZHNTSjlGcGFGZGVzanN4cXpHUmEyMFBZZG5uZldjQ1R2Rm91bHBiRlI0VkJ1WG5uVkxWemtVdmxYVCUwQUwlMkZUQW5kOG5JWmswelprRko3UDVMdGVQdnlra2FyN0xjU1FPODV3dGNRZTBSMVJhZiUyRnNRNndZS2FLbUZnQ0dlJTBBTnBFSlVtZzRrdGFsNHFnSUF4ayUyQlFIVXhRRTQyc3hWaU41bXFnbEIwUUpkVW90JTJGbzlhJTJGViUyRm1NZUg4S3ZPQWlRJTBBYnlpbmtObmRuJTJCQmdrNXNTVjVERmdGMERmZlZxbVZNYmx0NXAzalB0SW16QklIMFFRclhKcTM5QVQ4Y1J3UDVIJTBBYWZ1VmVMSGNEc1JwNmhvbDRQJTJCWkZJaHU4bW1iSTF1MGhIM1clMkYwQzJCdVlYQjVQQyUyQjVpekZGaCUyRm5QMGxjMkxmJTBBNnJFTE85TFpkbk9ocEwxRXhGT3E5SCUyRkI4dFBRODRUM1NnYjRuQWlmRGFiTnQlMkZ6dTZNbUNHbzVVOGx3RUZ0R00lMEFSb09hWDRBUyUyQjkwOXgwMGxZbm10d3NEVld2OXZCaUpDWFJzQ0F3RUFBYU9CeVRDQnhqQmdCZ05WSFI4RVdUQlglMEFNRldnVTZCUmhrOW9kSFJ3T2k4dmRISjFjM1JsWkhObGNuWnBZMlZ6TG1sdWRHVnNMbU52YlM5amIyNTBaVzUwJTBBTDBOU1RDOVRSMWd2UVhSMFpYTjBZWFJwYjI1U1pYQnZjblJUYVdkdWFXNW5RMEV1WTNKc01CMEdBMVVkRGdRVyUwQUJCUjRRM3QycG42ODBLOSUyQlFqZnJOWHc3aHdGUlBEQWZCZ05WSFNNRUdEQVdnQlI0UTN0MnBuNjgwSzklMkJRamZyJTBBTlh3N2h3RlJQREFPQmdOVkhROEJBZjhFQkFNQ0FRWXdFZ1lEVlIwVEFRSCUyRkJBZ3dCZ0VCJTJGd0lCQURBTkJna3ElMEFoa2lHOXcwQkFRc0ZBQU9DQVlFQWVGOHRZTVhJQ3ZRcWVYWVFJVGtWMm9MSnNwNko0SkFxSmFiSFd4WUpIR2lyJTBBSUVxdWNSaUpTU3glMkJIaklKRVVWYWo4RTBRakV1ZDZZNWxObVhsY2pxUlhhQ1BPcUswZUdSejZoaSUyQnJpcE10UFolMEFzRk5hQndMUVZWOTA1U0RqQXpEek5JRG5yY25YeUI0Z2NERkN2d0RGS0tnTFJqT0IlMkZXQXFnc2NEVW9HcTVaVmklMEF6TFV6VHFpUVBtVUxBUWFCOWM2T3RpNnNuRUZKaUNRNjdKTHlXJTJGRTgzJTJGZnJ6Q21PNVJ1NldqVTR0bXNteThSYSUwQVVkNEFQSzB3WlRHdGZQWFU3dyUyQklCZEc1RXowa0UxcXp4R1FhTDRnSU5KMXpNeWxlRG5idVM4VWljakppanZxQSUwQTE1MlNxMDQ5RVNEeiUyQjFyUkdjMk5WRXFoMUthR1htdFh2cXhYY1RCJTJCTGp5NUJ3MmtlMHY4aUduZ0ZCUHFDVFZCJTBBM29wNUtCRzNSamJGNlJSU3p3enVXZkw3UUVyTkM4V0V5NXlEVkFSelRBNSUyQnhtQmMzODh2OURtMjFIR2ZjQzhPJTBBREQlMkJnVDlzU3Bzc3EwYXNjbXZINDlNT2dqdDF5b3lzTHRkQ3RKVyUyRjlGWnBvT3lwYUh4MFIlMkJtSlRMd1BYVk1ydiUwQURhVnpXaDVhaUV4JTJCaWRrU0dNblglMEEtLS0tLUVORCUyMENFUlRJRklDQVRFLS0tLS0lMEE="
+            }
+          },
+          "extra_info": null
+        }
+      ],
+      "roles": "compute",
+      "software_version": "22.2.3"
+    },
+    "node_status": {
+      "expiration_processed": false,
+      "freeze_end_time": 0,
+      "election_eligible_after": 19962
+    }
+  }
+}
